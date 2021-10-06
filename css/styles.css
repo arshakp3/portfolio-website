@@ -1,7 +1,7 @@
 :root {
     --background-color: #171717;
-    --text-color-header: #6F2232;
-    --text-color: #950740;
+    --text-color-header: gray;
+    --text-color: white;
     --primary-color: 008080;
     --secondary-color: #4E4E50;
     --page-padding: 20px;
@@ -16,14 +16,14 @@
 }
 
 
-header {
+.header {
 
     font-weight: 800;
     line-height: 1.6;
     color: var(--text-color-header);
 }
 
-body {
+.body {
     background-color: var(--background-color);
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
@@ -32,28 +32,28 @@ body {
     text-align: center;
 }
 
-span{
+.span{
 
     color: #4E4E50;
 }
 
-p {
+.p {
     font-size: var(--content-font-size)
 }
 
 
-a:active {
+.a:active {
 
     color: black;
 }
 
 
-h1 {
+.h1 {
     font-family: 'Gluten', cursive;
     text-decoration-style: solid;
     color: var(--primary-color)
 }
-button, .resume-button {
+.button, .resume-button {
     border: none;
     display: inline-block;
     background-color: #fffc66;
@@ -67,12 +67,12 @@ button, .resume-button {
     transition: opacity 1s ease-in-out 6ms;
 }
 
-button:hover, button:focus, .resume-button:hover, .resume-button:focus {
+.button:hover, button:focus, .resume-button:hover, .resume-button:focus {
     cursor: pointer;
     opacity: 0.79;
 }
 
-table {
+.table {
     margin: 0 auto;
 }
 .page-header {
@@ -86,7 +86,14 @@ table {
 page-header__item {
     flex: 0 1 200px;
 }
+.Works{
+    padding: 25px;
+}
+.page-content {
+    width: 80%;
+    margin: 0 auto;
 
+  }
 .page-header__item:last-child {
     flex-grow: 1;
     text-align: right;
@@ -119,8 +126,8 @@ page-header__item {
 }
 
 .profile__portrait {
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 450px;
     border-radius: 50%;
     object-fit: cover;
     float: left;
